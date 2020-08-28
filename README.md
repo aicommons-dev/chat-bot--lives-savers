@@ -12,3 +12,7 @@ To run the app (app.py) locally do:
 ### Chatbot Model
 
 Sample set of intents is available in the file intents.json. There is pre-built model called model_ChatBot.h5. If you want to rebuild the model - run Jupyter notebook ChatBotModel.ipynb. For testing of the model run ChatBotResponse.ipynb.
+
+### MISCELLANEOUS
+
+Suggestions and contributions are welcome in improving this solution.
