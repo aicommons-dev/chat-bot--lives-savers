@@ -4,4 +4,7 @@ This is a github repository containing the entry code for Lives_Savers Team for 
 
 ### Technology: TensorFlow, Keras, Flask, Python, NLP
 ### Author: The Lives_Savers Team
-To run the app locally do pip -r requirements.txt found in the Lives_Savers folder.
+To run the app (app.py) locally do:
+1. cd Lives_Savers
+2. pip install -r requirements.txt
+3. python app.py
