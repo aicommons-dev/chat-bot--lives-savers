@@ -1,0 +1,59 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "I need your help"],
+         "responses": ["Hello, I am here to help you", "I am a chatbot, I will provide you with a little guide and counsel based on cognitive-behavioural-therapy about your condition", "Good to see you here, I am available to assist you", "Hi there, how can I help?", "I am interested in helping you medically"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for talking to me, I hope I have been of help?", "Have a nice day", "Bye! Come back again soon, I will be available for you."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["You are welcome!", "Any time!", "My pleasure"]
+        },
+	{"tag": "noanswer",
+         "patterns": [""],
+         "responses": ["Sorry, I can't understand you", "Please give me more infomation", "I am not sure I understand", "Can you please be specific with your input?", "use key words like cognitive-behavioural-therapy, heart disease, depressed or anxiety"]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What can you support offer me?"],
+         "responses": ["I can provide simple Cognitive Behavioural Therapy, so you won't feel depressed and anxious", " I can guide you on heart rates calculation", "I am offering support for people living with chronic diseases through the administation of  simple CBT"],
+         "context_set": ["options"]
+        },
+        {"tag": "heartrates-reading",
+         "patterns": ["How to get the most accurate heart rates", "Tell me how I can measure my heart rate." ],
+         "responses": ["To get the most accurate  heart beats reading, you may want to repeat a few times and use the average of the three values", "Do not measure your heart rate within one to two hours after exercise or a stressful event"]
+        },
+        {"tag": "heartrates",
+         "patterns": ["What simple step can I take to measure my heart rates?", "How to check my heart rates?", "What procedure to take to measure heart rates?", "Tell me how I can measure my heart rate.", "How can I calculate my heart beats?"],
+         "responses": ["1. At the wrist, lightly press the index and middle fingers of one hand on the opposite wrist, just below the base of the thumb, 2. At the neck, lightly press the side of the neck, just below your jawbone, 3. Count the number of beats in 15 seconds, and multiply by four. That's your heart rate."],
+	 "context_set": "calculateheartrates"
+        },
+        {"tag": "heart-disease",
+         "patterns": ["Symptoms of heart disease", "I want to know common symptoms of heart disease", "Do you know common heart disease symptoms?", "Are able to tell me symptoms of heart disease?" ],
+         "responses": ["symptoms include:Chest pain, chest tightness, chest pressure and chest discomfort (angina)", "Shortness of breath", "Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in those parts of your body are narrowed"],
+         "context_set": "symptoms"
+         },
+	{"tag": "cognitive-behavioural-therapy",
+         "patterns": ["I am depressed because of my heart condition", "I feel anxious and depressed because of my heart disease", "I might die because of my chronic heart disease"],
+         "responses": ["get rid of negative thinkings about your chronic heart disease", "be aware of your thoughts, emotions and beliefs about the problem", "If you follow your medical advice, you have chances of surviving"],
+	 "context_filter": "Counsel"
+        },
+	{"tag": "cognitive-behavioural-therapy",
+         "patterns": ["I feel sick always, can I survive this?", "this condition will kill me", "I have no one to help me"],
+         "responses": ["get rid of negative thinkings about your chronic heart disease", "be aware of your thoughts, emotions and beliefs about the problem", "If you strictly follow the medical advices, you have chances of surviving"],
+	 "context_filter": "Counsel"
+        },
+	{"tag": "cognitive-behavioural-therapy",
+         "patterns": ["I just feel like I will soon die", "I am sick and tired of my situation"],
+         "responses": ["This is inaccurate thinking!, I will advice you see a human therapist or doctor", "be aware of your thoughts, emotions and beliefs about the problem which may have negative impact on your well-being."],
+	 "context_filter": "Counsel"
+        },
+        {"tag": "doctor",
+         "patterns": ["Can you recommend doctor for me?", "Can you book doctor for me?", "I need to see human doctor?"],
+         "responses": ["No, please. I am only a bot trying to help in my little way", "No, please. I am only a bot trying to help in my little way", "Please, check with your local areas"]
+        }
+   ]
+}
+
